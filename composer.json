@@ -1,0 +1,28 @@
+{
+    "name": "trueqap/fluent-support-email-piping",
+    "description": "Local IMAP/POP3 email piping for Fluent Support - GDPR compliant alternative",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "TrueQAP"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "webklex/php-imap": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TrueQAP\\FluentEmailPiping\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.1"
+        }
+    }
+}

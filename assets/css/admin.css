@@ -1,0 +1,115 @@
+/**
+ * Fluent Support Email Piping - Admin Styles
+ */
+
+.fsep-settings {
+    max-width: 1200px;
+}
+
+.fsep-settings .nav-tab-wrapper {
+    margin-bottom: 20px;
+}
+
+.fsep-settings .tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    border-top: none;
+}
+
+/* Status badges */
+.fsep-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fsep-status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.fsep-status-inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Accounts table */
+.fsep-settings .wp-list-table {
+    margin-bottom: 30px;
+}
+
+.fsep-settings .wp-list-table td {
+    vertical-align: middle;
+}
+
+.fsep-settings .wp-list-table .button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Account form */
+.fsep-account-form-wrapper {
+    background: #f6f7f7;
+    padding: 20px;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+}
+
+.fsep-account-form-wrapper h3 {
+    margin-top: 0;
+}
+
+.fsep-account-form-wrapper .form-table th {
+    width: 200px;
+}
+
+/* Logs table */
+.fsep-settings .wp-list-table small {
+    color: #666;
+}
+
+/* Notice inline */
+.fsep-settings .notice.inline {
+    margin: 15px 0;
+}
+
+/* Loading state */
+.fsep-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.fsep-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #0073aa;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: fsep-spin 0.8s linear infinite;
+}
+
+@keyframes fsep-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .fsep-account-form-wrapper .form-table th {
+        width: auto;
+    }
+
+    .fsep-settings .wp-list-table .button {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
